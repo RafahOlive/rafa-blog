@@ -30,6 +30,9 @@
   .bg-alt {
     background-color: var(--color-bg-alt);
   }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
   @keyframes blink {
     0%,
     100% {
@@ -42,4 +45,7 @@
   .animate-blink {
     animation: blink 1s ease-in-out infinite;
   }
+}
+body {
+  padding-bottom: env(safe-area-inset-bottom);
 }
