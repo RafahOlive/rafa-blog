@@ -7,7 +7,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-alt py-4 px-6 mt-auto flex justify-between items-center">
+    <footer className="bg-alt py-4 px-6 flex justify-between items-center">
       {/* Esquerda - Email */}
       <a
         href="mailto:seuemail@example.com"
