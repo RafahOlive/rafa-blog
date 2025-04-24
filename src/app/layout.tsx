@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="min-h-dvh flex flex-col bg-main">
+      {/* Usamos min-h-dvh para garantir altura total da tela no mobile, respeitando áreas seguras como barras do sistema */}
         <Header />
         <main className="flex-grow pb-6 pb-safe">{children}</main>
         <Footer />

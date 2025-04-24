@@ -6,6 +6,7 @@
     --color-text-subtle: #cccccc; /* Subtítulos e descrições */
     --color-bg-main: #1e1e1e; /* Background principal */
     --color-bg-alt: #181818; /* Background header/footer */
+    --color-bg-alt-smooth: #1c1c1c; /* Background do Explorar */
   }
 }
 @layer utilities {
@@ -29,6 +30,9 @@
   }
   .bg-alt {
     background-color: var(--color-bg-alt);
+  }
+  .bg-alt-smooth {
+    background-color: var(--color-bg-alt-smooth);
   }
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
