@@ -6,7 +6,7 @@
     --color-text-subtle: #cccccc; /* Subtítulos e descrições */
     --color-bg-main: #1e1e1e; /* Background principal */
     --color-bg-alt: #181818; /* Background header/footer */
-    --color-bg-alt-smooth: #1c1c1c; /* Background do Explorar */
+    --color-bg-alt-smooth: #2a2a2a; /* Background do Explorar */
   }
 }
 @layer utilities {

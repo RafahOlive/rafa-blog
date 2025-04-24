@@ -33,7 +33,7 @@ export default function Hero() {
             </figcaption>
           </figure>
         </Link>
-        <Link href="/Artigos" className="group flex flex-col items-center">
+        <Link href="/artigos" className="group flex flex-col items-center">
           <figure className="flex flex-col items-center transition hover:scale-105 hover:opacity-90">
             <PiFolder className="icons-orange" size={50} aria-hidden="true" />
             <figcaption className="mt-2 text-sm text-white group-hover:text-orange-500">

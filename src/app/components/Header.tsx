@@ -27,8 +27,10 @@ export default function Header() {
       <div className="relative">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`flex items-center gap-1 text-white px-4 py-1 rounded-full transition-all duration-300 md:hidden ${
-            menuOpen ? "bg-orange" : "bg-alt-smooth hover:bg-orange"
+          className={`flex items-center gap-1 text-white px-4 py-1 rounded-full transition-all duration-300 border-2 md:hidden ${
+            menuOpen 
+            ? "bg-orange border-orange" 
+            : "bg-alt-smooth border-icons-orange hover:bg-orange"
           }`}
         >
           Explorar
