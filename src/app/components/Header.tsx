@@ -19,7 +19,7 @@ export default function Header() {
           height={40}
           className="rounded-full object-cover border-2 border-icons-orange"
         />
-        <span className="text-sm font-medium text-gray-100">
+        <span className="text-[18px] font-semibold text-white font-inter">
           Rafael Ribeiro
         </span>
       </Link>

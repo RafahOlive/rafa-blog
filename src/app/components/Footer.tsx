@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-alt py-4 px-6 flex justify-between items-center">
       {/* Esquerda - Email */}
       <a
-        href="mailto:seuemail@example.com"
+        href="mailto:rafaelribeiro12@live.com"
         className="text-white hover:text-orange-500 transition"
       >
         <AiOutlineMail className="icons-orange" size={24} />
@@ -19,7 +19,7 @@ export default function Footer() {
       {/* Direita - Redes sociais */}
       <div className="flex space-x-4">
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/olivedev.tsx?igsh=MXh6Zm1wZXhyYXdlMg%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-orange-500 transition"
@@ -27,7 +27,7 @@ export default function Footer() {
           <AiOutlineInstagram className="icons-orange" size={24} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/rafaelribeirodev/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-orange-500 transition"
@@ -35,7 +35,7 @@ export default function Footer() {
           <AiOutlineLinkedin className="icons-orange" size={24} />
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/RafahOlive"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-orange-500 transition"
