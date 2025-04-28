@@ -4,8 +4,8 @@ import { PiFolder, PiFile } from "react-icons/pi";
 
 export default function Hero() {
   return (
-    <>
-      <section className="mt-20 px-4 md:px-16">
+    <div className="flex flex-col justify-center items-center min-h-dvh px-4">
+      <section>
         <h2 className="text-lg font-medium text-gray-400 text-center">
           Hello, my name is
           <span className="ml-1 animate-blink">|</span>
@@ -42,6 +42,6 @@ export default function Hero() {
           </figure>
         </Link>
       </section>
-    </>
+    </div>
   );
 }
