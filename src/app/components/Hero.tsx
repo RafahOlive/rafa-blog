@@ -4,7 +4,7 @@ import { PiFolder, PiFile } from "react-icons/pi";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-dvh px-4">
+    <div className="flex flex-col justify-center items-center flex-grow px-4">
       <section>
         <h2 className="text-lg font-medium text-gray-400 text-center">
           Hello, my name is
