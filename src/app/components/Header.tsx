@@ -7,7 +7,10 @@ import { useState } from "react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="py-2 px-16 flex justify-between bg-alt">
+    <div
+      className="py-2 px-6 flex justify-between bg-alt
+    lg:px-16"
+    >
       <Link
         href="/"
         className="flex items-center gap-2 hover:opacity-80 transition"
@@ -28,9 +31,9 @@ export default function Header() {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className={`flex items-center gap-1 text-white px-4 py-1 rounded-full transition-all duration-300 border-2 md:hidden ${
-            menuOpen 
-            ? "bg-orange border-orange" 
-            : "bg-alt-smooth border-icons-orange hover:bg-orange"
+            menuOpen
+              ? "bg-orange border-orange"
+              : "bg-alt-smooth border-icons-orange hover:bg-orange"
           }`}
         >
           Explorar
