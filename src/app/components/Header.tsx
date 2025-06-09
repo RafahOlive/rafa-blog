@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="py-2 px-4 flex justify-between bg-alt">
+    <div className="py-2 px-16 flex justify-between bg-alt">
       <Link
         href="/"
         className="flex items-center gap-2 hover:opacity-80 transition"

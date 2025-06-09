@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ['latin'], weight: ['400', '600'] }) // 400 normal, 600 semi-bold
+const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] }); // 400 normal, 600 semi-bold
 
 export const metadata: Metadata = {
   title: "Blog Rafael",
@@ -20,11 +20,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-main min-h-dvh flex flex-col`}>
-      {/* Usamos min-h-dvh para garantir altura total da tela no mobile, respeitando áreas seguras como barras do sistema */}
-        <Header />
-        <main className="flex-grow pb-6 pb-safe">{children}</main>
-        <Footer />
+      <body className={`${inter.className} bg-main`}>
+        <div
+          className="flex flex-col justify-center self-center
+           min-h-dvh
+          
+          lg:border-8 lg:border-gray-700 lg:rounded-3xl 
+          lg:w-[1000px] lg:max-w-[95vw] 
+          lg:min-h-[90vh]
+          lg:mx-auto lg:my-8
+          lg:overflow-hidden"
+        >
+          <Header />
+          <main className="flex flex-col justify-center flex-grow h-full">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
