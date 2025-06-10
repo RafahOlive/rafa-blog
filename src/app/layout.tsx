@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${inter.className} bg-main`}>
         <div
-          className="flex flex-col justify-center self-center
+          className="flex flex-col
            min-h-dvh
           
           lg:border-8 lg:border-gray-700 lg:rounded-3xl 
@@ -32,7 +32,7 @@ export default function RootLayout({
           lg:overflow-hidden"
         >
           <Header />
-          <main className="flex flex-col justify-center flex-grow h-full">{children}</main>
+          <main className="flex-grow h-full">{children}</main>
           <Footer />
         </div>
       </body>
