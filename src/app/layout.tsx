@@ -20,19 +20,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-main`}>
+      <body className={`${inter.className} bg-main h-dvh flex items-center justify-center`}>
         <div
           className="flex flex-col
-           min-h-dvh
-          
+          h-dvh
           lg:border-8 lg:border-gray-700 lg:rounded-3xl 
           lg:w-[1000px] lg:max-w-[95vw] 
-          lg:min-h-[90vh]
-          lg:mx-auto lg:my-8
+          lg:max-h-[87vh]         
           lg:overflow-hidden"
         >
           <Header />
-          <main className="flex-grow h-full">{children}</main>
+          <main
+            className="flex-grow
+          lg:max-h-[70vh] overflow-y-auto"
+          >
+            {children}
+          </main>
           <Footer />
         </div>
       </body>
