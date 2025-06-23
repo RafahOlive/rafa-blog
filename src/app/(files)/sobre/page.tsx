@@ -1,20 +1,12 @@
 export default function Sobre() {
   return (
     <div
-      className="flex flex-row
+      className="flex flex-row h-full flex-grow
     "
     >
-      <aside
-        className="hidden 
-        lg:flex lg:flex-col
-        lg:border-8 lg:border-gray-700 lg:rounded-3xl "
-      >
-        Barra lateral
-      </aside>
-
       <section
         className="p-4 text-base leading-relaxed text-gray-300 
-        lg:p-16 lg:text-lg lg:leading-loose"
+        lg:text-lg lg:leading-loose"
       >
         <h1 className="text-2xl font-bold mb-4 text-white">Sobre mim</h1>
         <p className="mb-4">

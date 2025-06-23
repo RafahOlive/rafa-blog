@@ -3,7 +3,7 @@
   :root {
     --color-icons-orange: #ff7849; /* Ícones e imagens - laranja suave */
     --color-text-light: #ffffff; /* Nome no header/hero e títulos */
-    --color-text-subtle: #cccccc; /* Subtítulos e descrições */
+    --color-text-subtitle: #cccccc; /* Subtítulos e descrições */
     --color-bg-main: #1e1e1e; /* Background principal */
     --color-bg-alt: #181818; /* Background header/footer */
     --color-bg-alt-smooth: #2a2a2a; /* Background do Explorar */
@@ -22,8 +22,8 @@
   .text-white-light {
     color: var(--color-text-light);
   }
-  .text-subtle {
-    color: var(--color-text-subtle);
+  .text-subtitle {
+    color: var(--color-text-subtitle);
   }
   .bg-main {
     background-color: var(--color-bg-main);
@@ -55,4 +55,28 @@
 } */
 body {
   padding-bottom: env(safe-area-inset-bottom);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff7849 #888;
 }

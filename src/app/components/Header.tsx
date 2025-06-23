@@ -8,8 +8,8 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div
-      className="py-2 px-6 flex justify-between bg-alt
-    lg:px-16"
+      className="bg-alt py-2 px-6 flex justify-between 
+      lg:px-16 lg:py-2 lg:h-[9vh]"
     >
       <Link
         href="/"

@@ -20,13 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-main h-dvh flex items-center justify-center`}>
+      <body className={`${inter.className} bg-main h-dvh lg:flex lg:items-center lg:justify-center `}>
         <div
           className="flex flex-col
           h-dvh
           lg:border-8 lg:border-gray-700 lg:rounded-3xl 
           lg:w-[1000px] lg:max-w-[95vw] 
-          lg:max-h-[87vh]         
+          lg:max-h-[85vh]  
           lg:overflow-hidden"
         >
           <Header />
