@@ -2,8 +2,17 @@ import Image from "next/image";
 export default function Projetos() {
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold text-white mb-2">Projetos</h1>
-      <p className="text-subtitle mb-6">
+      <h1
+        className="text-xl font-bold text-center
+        text-white 
+        mb-2"
+      >
+        Projetos
+      </h1>
+      <p
+        className="text-subtitle text-center
+        mb-6"
+      >
         Em breve, projetos incríveis serão compartilhados aqui!
       </p>
 
@@ -28,7 +37,6 @@ export default function Projetos() {
         />
         <p className="text-white">Ecommerce</p>
       </div>
-
     </div>
   );
 }

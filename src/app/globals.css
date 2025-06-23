@@ -3,7 +3,7 @@
   :root {
     --color-icons-orange: #ff7849; /* Ícones e imagens - laranja suave */
     --color-text-light: #ffffff; /* Nome no header/hero e títulos */
-    --color-text-subtitle: #cccccc; /* Subtítulos e descrições */
+    --color-text-subtitle: #ccb785; /* Subtítulos e descrições */
     --color-bg-main: #1e1e1e; /* Background principal */
     --color-bg-alt: #181818; /* Background header/footer */
     --color-bg-alt-smooth: #2a2a2a; /* Background do Explorar */
@@ -19,7 +19,7 @@
   .border-icons-orange {
     border-color: var(--color-icons-orange);
   }
-  .text-white-light {
+  .text-title {
     color: var(--color-text-light);
   }
   .text-subtitle {
