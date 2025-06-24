@@ -1,29 +1,37 @@
 @import "tailwindcss";
 @layer base {
   :root {
-    --color-icons-orange: #ff7849; /* Ícones e imagens - laranja suave */
-    --color-text-light: #ffffff; /* Nome no header/hero e títulos */
-    --color-text-subtitle: #ccb785; /* Subtítulos e descrições */
-    --color-bg-main: #1e1e1e; /* Background principal */
-    --color-bg-alt: #181818; /* Background header/footer */
-    --color-bg-alt-smooth: #2a2a2a; /* Background do Explorar */
+    --color-orange-base: #ff7849; /* Base - Icones, highlihts */
+    --color-orange-soft: #ff9a70;  /* Mais claro - Hover, interações, destaques secundários */
+    --color-orange-muted: #ffb59b; /* Bem claro - Background de badge, detalhe suave, bordas, sombras coloridas */
+
+    --color-text-light: #ffffff;   /* Base - Títulos, nome, principais */
+    --color-text-soft: #f2f2f2;    /* Suave - Textos secundários, parágrafos */
+    --color-text-muted: #e5e5e5;   /* Bem suave - Descrições, labels, detalhes bem suaves */
+
+    --color-bg-main: #1e1e1e;
+    --color-bg-alt: #181818;
+    --color-bg-alt-smooth: #2a2a2a;
   }
 }
 @layer utilities {
   .icons-orange {
-    color: var(--color-icons-orange);
+    color: var(--color-orange-base);
   }
   .bg-orange {
-    background-color: var(--color-icons-orange);
+    background-color: var(--color-orange-base);
   }
   .border-icons-orange {
-    border-color: var(--color-icons-orange);
+    border-color: var(--color-orange-base);
   }
   .text-title {
     color: var(--color-text-light);
   }
   .text-subtitle {
-    color: var(--color-text-subtitle);
+    color: var(--color-text-soft);
+  }
+   .text-detail {
+    color: var(--color-text-muted);
   }
   .bg-main {
     background-color: var(--color-bg-main);

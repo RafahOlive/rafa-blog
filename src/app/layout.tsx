@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} bg-main h-dvh lg:flex lg:items-center lg:justify-center `}>
+      <body className={`${inter.className} bg-alt-smooth h-dvh lg:flex lg:items-center lg:justify-center `}>
         <div
           className="flex flex-col
           h-dvh
