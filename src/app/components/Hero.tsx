@@ -4,13 +4,16 @@ import { PiFolder, PiFile } from "react-icons/pi";
 export default function Hero() {
   return (
     <div
-      className="flex flex-col
+      className="h-full
+      px-4
+      flex flex-col gap-8 items-center justify-center
       lg:flex-row lg:items-center lg:gap-32
-      p-16
+      
       "
     >
       <section
-        className="text-center w-full
+        className="flex flex-col gap-4
+        text-center 
         lg:flex-1 lg:text-left
         "
       >
@@ -25,7 +28,8 @@ export default function Hero() {
       </section>
 
       <section
-        className="grid grid-cols-2 gap-4 px-12 py-6 max-w-md mx-auto
+        className="w-50
+        grid grid-cols-2 gap-8
         lg:flex-1 lg:px-0 lg:py-0 lg:mx-0 lg:max-w-none lg:gap-16
         "
       >

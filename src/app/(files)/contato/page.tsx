@@ -1,9 +1,14 @@
 export default function Contato() {
   return (
     <div className="max-w-md mx-auto p-6">
-      <h1 className="text-2xl font-bold text-white mb-2">Contact Me</h1>
+      <h1 className="text-2xl font-bold text-white mb-2">
+        Entre em contato comigo
+      </h1>
       <p className="text-subtitle mb-6">
-        Feel free to get in touch by completing the form below.
+        Quer trocar uma ideia ou tirar um projeto do papel? Se você precisa de
+        manutenção no seu site, quer criar algo novo, pedir um orçamento ou só
+        bater um papo sobre sua ideia — é só mandar sua mensagem. Respondo o
+        mais rápido possível!
       </p>
 
       <form
@@ -18,13 +23,13 @@ export default function Contato() {
         />
         <div>
           <label htmlFor="name" className="block text-sm text-subtitle mb-1">
-            Name
+            Nome
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Your name"
+            placeholder="Seu nome"
             required
             className="w-full rounded-lg bg-bg-alt-smooth border border-gray-700 p-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-icons-orange"
           />
@@ -38,7 +43,7 @@ export default function Contato() {
             type="email"
             id="email"
             name="email"
-            placeholder="your@email.com"
+            placeholder="seu-email@email.com"
             required
             className="w-full rounded-lg bg-bg-alt-smooth border border-gray-700 p-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-icons-orange"
           />
@@ -46,12 +51,12 @@ export default function Contato() {
 
         <div>
           <label htmlFor="message" className="block text-sm text-subtitle mb-1">
-            Message
+            Mensagem
           </label>
           <textarea
             id="message"
             name="message"
-            placeholder="Your message"
+            placeholder="Sua mensagem aqui"
             rows={4}
             required
             className="w-full rounded-lg bg-bg-alt-smooth border border-gray-700 p-3 text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-icons-orange"
