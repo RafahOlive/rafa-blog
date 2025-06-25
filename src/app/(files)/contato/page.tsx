@@ -7,10 +7,15 @@ export default function Contato() {
       </p>
 
       <form
-        action="https://formspree.io/f/SEU_ID_AQUI" // 🔥 troca aqui depois
+        action="https://api.web3forms.com/submit"
         method="POST"
         className="flex flex-col gap-4"
       >
+        <input
+          type="hidden"
+          name="access_key"
+          value="981af9da-3f2d-423b-b125-922049c4751d"
+        />
         <div>
           <label htmlFor="name" className="block text-sm text-subtitle mb-1">
             Name

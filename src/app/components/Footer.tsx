@@ -4,6 +4,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,12 +13,12 @@ export default function Footer() {
       lg:px-16 lg:py-0 lg:h-[9vh]"
     >
       {/* Esquerda - Email */}
-      <a
-        href="mailto:rafaelribeiro12@live.com"
-        className="text-white hover:text-orange-500 transition"
+      <Link
+        href="/contato"
+        className="text-white hover:text-icons-orange transition"
       >
         <AiOutlineMail className="icons-orange" size={24} />
-      </a>
+      </Link>
 
       {/* Direita - Redes sociais */}
       <div className="flex space-x-4">
