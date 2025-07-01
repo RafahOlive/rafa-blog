@@ -7,9 +7,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export function generateStaticParams() {
@@ -23,9 +23,10 @@ export function generateStaticParams() {
  export default async function ArtigoPage(props: Props) {
   const params = await props.params;
   const { slug } = params;
-  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.md`);
+  
  //-------------------//
 
+  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.md`);
   if (!fs.existsSync(filePath)) notFound();
 
   const fileContent = fs.readFileSync(filePath, "utf-8");
