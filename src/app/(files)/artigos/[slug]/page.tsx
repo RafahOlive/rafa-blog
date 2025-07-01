@@ -6,22 +6,25 @@ import Markdown from "react-markdown";
 import Link from "next/link";
 import Image from "next/image";
 
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
 export function generateStaticParams() {
-  const pasta = path.join(process.cwd(), "src/content/artigos");
-  const arquivos = fs.readdirSync(pasta);
-
-  return arquivos.map((nome) => ({
-    slug: nome.replace(".md", ""),
-  }));
+  const pasta = path.join(process.cwd(), "content/artigos");
+  return fs
+    .readdirSync(pasta)
+    .filter((nome) => nome.endsWith(".md"))
+    .map((nome) => ({ slug: nome.replace(".md", "") }));
 }
-
-export default async function ArtigoPage({ params }: { params: { slug: string } }) {
+ //--------------------------//
+  export default async function ArtigoPage(props: Props) {
+  const params = await props.params;
   const { slug } = params;
-  const filePath = path.join(
-    process.cwd(),
-    "src/content/artigos",
-    `${slug}.md`
-  );
+  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.md`);
+ //-------------------//
 
   if (!fs.existsSync(filePath)) notFound();
 
@@ -30,15 +33,12 @@ export default async function ArtigoPage({ params }: { params: { slug: string } 
 
   return (
     <div className="max-w-3xl mx-auto p-6 text-white">
-      {/* 🔙 Voltar */}
       <Link href="/artigos" className="text-subtle hover:underline mb-4 block">
         ← Artigos
       </Link>
 
-      {/* 🧠 Título */}
       <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
 
-      {/* 👤 Autor + 🏷️ Tag */}
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-3">
           <Image

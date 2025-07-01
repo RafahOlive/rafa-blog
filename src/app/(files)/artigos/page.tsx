@@ -5,7 +5,7 @@ import Link from "next/link";
 import { PiFileDuotone } from "react-icons/pi";
 
 export default function Artigos() {
-  const pasta = path.join(process.cwd(), "src/content/artigos");
+  const pasta = path.join(process.cwd(), "content/artigos");
   const arquivos = fs.readdirSync(pasta);
 
   const artigos = arquivos.map((arquivo) => {
