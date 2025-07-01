@@ -57,15 +57,15 @@ export default function Header() {
 
         {menuOpen && (
           <div className="mt-2 bg-alt text-white rounded-md shadow-md flex flex-col absolute z-50 w-40">
-            <a href="/artigos" className="px-4 py-2 hover:bg-orange">
+            <Link href="/artigos" className="px-4 py-2 hover:bg-orange">
               Artigos
-            </a>
-            <a href="/projetos" className="px-4 py-2 hover:bg-orange">
+            </Link>
+            <Link href="/projetos" className="px-4 py-2 hover:bg-orange">
               Projetos
-            </a>
-            <a href="/contato" className="px-4 py-2 hover:bg-orange">
+            </Link>
+            <Link href="/contato" className="px-4 py-2 hover:bg-orange">
               Contato
-            </a>
+            </Link>
           </div>
         )}
       </div>

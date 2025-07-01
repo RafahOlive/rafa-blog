@@ -38,44 +38,44 @@ export default function AsideFiles() {
           <h2 className="text-white-light text-sm mb-2">Folder</h2>
           <ul className="space-y-2">
             <li>
-              <a
+              <Link
                 href="/projetos"
                 className="flex items-center gap-2 hover:text-white-light"
               >
                 <PiFolder />
                 Projetos
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/artigos"
                 className="flex items-center gap-2 hover:text-white-light"
               >
                 <PiFolder />
                 Artigos
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/ferramentas"
                 className="flex items-center gap-2 hover:text-white-light"
               >
                 <PiFolder />
                 Ferramentas
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div>
           <h2 className="text-white-light text-sm mb-2">Files</h2>
-          <a
+          <Link
             href="/sobre"
             className="flex items-center gap-2 hover:text-white-light"
           >
             <PiFile />
             About
-          </a>
+          </Link>
         </div>
       </div>
     </aside>
