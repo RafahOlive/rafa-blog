@@ -20,12 +20,11 @@ export function generateStaticParams() {
     .map((nome) => ({ slug: nome.replace(".md", "") }));
 }
  //--------------------------//
-  export default async function ArtigoPage(props: Props) {
-  const params = await props.params;
-  const { slug } = params;
-  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.md`);
+ export default async function ArtigoPage(props: Props) {
+  const { slug } = JSON.parse(JSON.stringify(props.params));
  //-------------------//
 
+  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.md`);
   if (!fs.existsSync(filePath)) notFound();
 
   const fileContent = fs.readFileSync(filePath, "utf-8");
