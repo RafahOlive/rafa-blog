@@ -1,10 +1,10 @@
 export default function Contato() {
   return (
     <div className="max-w-md mx-auto p-6">
-      <h1 className="text-2xl font-bold text-white mb-2">
+      <h1 className="text-2xl font-bold text-primary mb-2">
         Entre em contato comigo
       </h1>
-      <p className="text-subtitle mb-6">
+      <p className="text-secondary mb-6">
         Quer trocar uma ideia ou tirar um projeto do papel? Se você precisa de
         manutenção no seu site, quer criar algo novo, pedir um orçamento ou só
         bater um papo sobre sua ideia — é só mandar sua mensagem. Respondo o
@@ -22,7 +22,7 @@ export default function Contato() {
           value="981af9da-3f2d-423b-b125-922049c4751d"
         />
         <div>
-          <label htmlFor="name" className="block text-sm text-subtitle mb-1">
+          <label htmlFor="name" className="block text-sm text-tertiary mb-1">
             Nome
           </label>
           <input
@@ -36,7 +36,7 @@ export default function Contato() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm text-subtitle mb-1">
+          <label htmlFor="email" className="block text-sm text-tertiary mb-1">
             Email
           </label>
           <input
@@ -50,7 +50,7 @@ export default function Contato() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm text-subtitle mb-1">
+          <label htmlFor="message" className="block text-sm text-tertiary mb-1">
             Mensagem
           </label>
           <textarea

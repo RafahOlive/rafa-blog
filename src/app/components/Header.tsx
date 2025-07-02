@@ -2,10 +2,24 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  // const router = useRouter();
+
+  //  useEffect(() => {
+  //   const handleRouteChange = () => {
+  //     setMenuOpen(false);
+  //   };
+
+  //   router.events.on("routeChangeStart", handleRouteChange);
+  //   return () => {
+  //     router.events.off("routeChangeStart", handleRouteChange);
+  //   };
+  // }, []);
+
   return (
     <div
       className="bg-alt-smooth py-2 px-6 flex justify-between 
