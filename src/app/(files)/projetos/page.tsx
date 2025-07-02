@@ -4,13 +4,13 @@ export default function Projetos() {
     <div className="p-4">
       <h1
         className="text-xl font-bold text-center
-        text-white 
+        text-primary 
         mb-2"
       >
         Projetos
       </h1>
       <p
-        className="text-subtitle text-center
+        className="text-secondary text-center
         mb-6"
       >
         Em breve, projetos incríveis serão compartilhados aqui!
@@ -24,7 +24,7 @@ export default function Projetos() {
           height={80}
           className="rounded-lg"
         />
-        <p className="text-white">Calculadora</p>
+        <p className="text-tertiary">Calculadora</p>
       </div>
 
       <div className="flex flex-col items-center gap-4">
@@ -35,7 +35,7 @@ export default function Projetos() {
           height={80}
           className="rounded-lg"
         />
-        <p className="text-white">Ecommerce</p>
+        <p className="text-tertiary">Ecommerce</p>
       </div>
     </div>
   );

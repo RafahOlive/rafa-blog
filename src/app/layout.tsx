@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import { Poppins } from 'next/font/google';
 
 import "./globals.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] }); // 400 normal, 600 semi-bold
+// const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // Escolhe os pesos que vai usar
+  variable: '--font-poppins',          // Nome da CSS var que será criada
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Blog Rafael",
@@ -19,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={`${inter.className} bg-alt-smooth h-dvh lg:flex lg:items-center lg:justify-center `}>
+    <html lang="pt-BR" className={poppins.variable}>
+      <body className="bg-main h-dvh lg:flex lg:items-center lg:justify-center">
         <div
           className="flex flex-col
           h-dvh

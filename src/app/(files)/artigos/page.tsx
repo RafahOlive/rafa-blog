@@ -26,13 +26,13 @@ export default function Artigos() {
     <div className="p-4">
       <h1
         className="text-xl font-bold text-center
-                text-title
+                text-primary
                 mb-2"
       >
         Artigos
       </h1>
       <p
-        className="text-subtitle text-center
+        className="text-secondary text-center
                 mb-6"
       >
         Compartilhando um pouco do meu conhecimento e experiências
@@ -56,8 +56,8 @@ export default function Artigos() {
               className="bg-alt p-4 hover:opacity-90 transition"
             >
               <div className="flex flex-row items-center gap-3 mb-2">
-                <PiFileDuotone className="icons-orange" size={40} />
-                <p className="text-title">{artigo.title}</p>
+                <PiFileDuotone className="flex itens-start icons-orange" size={40} />
+                <p className="text-tertiary">{artigo.title}</p>
               </div>
 
               <div className="flex items-center gap-4 text-xs text-[#ffb59b] flex-wrap">

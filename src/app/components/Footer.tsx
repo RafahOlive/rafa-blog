@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      className="bg-alt py-4 px-6  flex justify-between items-center
+      className="bg-alt-smooth py-4 px-6  flex justify-between items-center
       lg:px-16 lg:py-0 lg:h-[9vh]"
     >
       {/* Esquerda - Email */}

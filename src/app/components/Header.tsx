@@ -8,7 +8,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div
-      className="bg-alt py-2 px-6 flex justify-between 
+      className="bg-alt-smooth py-2 px-6 flex justify-between 
       lg:px-16 lg:py-2 lg:h-[9vh]"
     >
       <Link
@@ -30,10 +30,10 @@ export default function Header() {
       <div className="relative">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`flex items-center gap-1 text-white px-4 py-1 rounded-full transition-all duration-300 border-2 md:hidden ${
+          className={`flex items-center gap-1 px-4 py-1 rounded-full transition-all duration-300 border-2 ${
             menuOpen
-              ? "bg-orange border-orange"
-              : "bg-alt-smooth border-icons-orange hover:bg-orange"
+              ? "bg-orange border-black text-black"
+              : "bg-alt border-orange text-primary hover:bg-orange"
           }`}
         >
           Explorar
@@ -56,7 +56,7 @@ export default function Header() {
         </button>
 
         {menuOpen && (
-          <div className="mt-2 bg-alt text-white rounded-md shadow-md flex flex-col absolute z-50 w-40">
+          <div className="mt-2 bg-alt text-white rounded-md shadow-md flex flex-col absolute z-50 w-max">
             <Link href="/artigos" className="px-4 py-2 hover:bg-orange">
               Artigos
             </Link>

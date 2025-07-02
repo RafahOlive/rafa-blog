@@ -2,37 +2,63 @@
 @layer base {
   :root {
     --color-orange-base: #ff7849; /* Base - Icones, highlihts */
-    --color-orange-soft: #ff9a70;  /* Mais claro - Hover, interações, destaques secundários */
+    --color-orange-soft: #ff9a70; /* Mais claro - Hover, interações, destaques secundários */
     --color-orange-muted: #ffb59b; /* Bem claro - Background de badge, detalhe suave, bordas, sombras coloridas */
 
-    --color-text-light: #ffffff;   /* Base - Títulos, nome, principais */
-    --color-text-soft: #f2f2f2;    /* Suave - Textos secundários, parágrafos */
-    --color-text-muted: #e5e5e5;   /* Bem suave - Descrições, labels, detalhes bem suaves */
+    --text-primary: #ffffff;
+    --text-secondary: #f2f2f2;
+    --text-tertiary: #e5e5e5;
+
+    --border-primary: #ffffff;
+    --border-orange: #ff7849;
+    --border-black: #1e1e1e;
 
     --color-bg-main: #1e1e1e;
     --color-bg-alt: #181818;
     --color-bg-alt-smooth: #2a2a2a;
+
+    --font-weight-regular: 400;
+      --font-weight-medium: 500;
+      --font-weight-bold: 700;
   }
 }
 @layer utilities {
+  .fw-regular {
+    font-weight: var(--font-weight-regular);
+  }
+  .fw-medium {
+    font-weight: var(--font-weight-medium);
+  }
+  .fw-bold {
+    font-weight: var(--font-weight-bold);
+  }
+
+  .text-primary {
+    color: var(--text-primary);
+  }
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  .text-tertiary {
+    color: var(--text-tertiary);
+  }
+
   .icons-orange {
     color: var(--color-orange-base);
   }
   .bg-orange {
     background-color: var(--color-orange-base);
   }
-  .border-icons-orange {
-    border-color: var(--color-orange-base);
+  .border-orange {
+    border-color: var(--border-orange);
   }
-  .text-title {
-    color: var(--color-text-light);
+   .border-white {
+    border-color: var(--border-primary);
   }
-  .text-subtitle {
-    color: var(--color-text-soft);
+   .border-black {
+    border-color: var(border-black);
   }
-   .text-detail {
-    color: var(--color-text-muted);
-  }
+
   .bg-main {
     background-color: var(--color-bg-main);
   }
@@ -63,6 +89,7 @@
 } */
 body {
   padding-bottom: env(safe-area-inset-bottom);
+  font-family: var(--font-poppins), sans-serif;
 }
 
 ::-webkit-scrollbar {
