@@ -4,24 +4,16 @@ import Link from "next/link";
 
 import { useState } from "react";
 
-// import { useEffect } from "react";
-// import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  // const router = useRouter();
+  const pathname = usePathname();
 
-  //  useEffect(() => {
-  //   const handleRouteChange = () => {
-  //     setMenuOpen(false);
-  //   };
-
-  //   router.events.on("routeChangeStart", handleRouteChange);
-  //   return () => {
-  //     router.events.off("routeChangeStart", handleRouteChange);
-  //   };
-  // }, []);
-
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
   return (
     <div
       className="bg-alt-smooth py-2 px-6 flex justify-between 
