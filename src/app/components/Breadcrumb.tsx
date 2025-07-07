@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Breadcrumb() {
   const pathname = usePathname();
 
-  const pathSegments = pathname
+  const pathSegments = (pathname ?? '')
     .split("/")
     .filter((segment) => segment.length > 0);
 
