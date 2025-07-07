@@ -2,7 +2,8 @@ import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div className="h-full
+    lg:p-10">
       <Hero />
     </div>
 

@@ -25,7 +25,7 @@ export default function Breadcrumb() {
     <nav
       className="hidden 
         lg:flex items-center
-        text-sm text-subtitle
+        text-sm text-tertiary
         w-full h-12 
         pl-4
         bg-alt

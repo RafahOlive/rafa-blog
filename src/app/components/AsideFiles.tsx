@@ -14,7 +14,7 @@ export default function AsideFiles() {
         bg-alt
         lg:border lg:border-gray-700
         
-        text-subtitle"
+        text-tertiary"
     >
       <div className="flex space-x-2 mb-8">
         <Link

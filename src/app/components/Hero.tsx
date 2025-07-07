@@ -5,7 +5,6 @@ export default function Hero() {
   return (
     <div
       className="h-full
-      px-4
       flex flex-col gap-8 items-center justify-center
       lg:flex-row lg:items-center lg:gap-32
       
@@ -30,7 +29,7 @@ export default function Hero() {
       <section
         className="w-50
         grid grid-cols-2 gap-8
-        lg:flex-1 lg:px-0 lg:py-0 lg:mx-0 lg:max-w-none lg:gap-16
+        lg:flex-1 lg:px-0 lg:py-0 lg:mx-0 lg:max-w-none lg:gap-10
         "
       >
         <Link href="/sobre" className="group flex flex-col items-center">

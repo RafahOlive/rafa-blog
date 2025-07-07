@@ -28,7 +28,7 @@ export default function Header() {
           alt="Foto de perfil"
           width={40}
           height={40}
-          className="rounded-full object-cover border-2 border-icons-orange"
+          className="rounded-full object-cover border-2 border-orange"
         />
         <span className="text-[18px] font-semibold text-white font-inter">
           Rafael Ribeiro
