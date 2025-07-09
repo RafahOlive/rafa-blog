@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
-import Markdown from "react-markdown";
+import { MDXRemote } from "next-mdx-remote/rsc"
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,8 +16,8 @@ export function generateStaticParams() {
   const pasta = path.join(process.cwd(), "content/artigos");
   return fs
     .readdirSync(pasta)
-    .filter((nome) => nome.endsWith(".md"))
-    .map((nome) => ({ slug: nome.replace(".md", "") }));
+    .filter((nome) => nome.endsWith(".mdx"))
+    .map((nome) => ({ slug: nome.replace(".mdx", "") }));
 }
  //--------------------------//
  export default async function ArtigoPage(props: Props) {
@@ -26,15 +26,16 @@ export function generateStaticParams() {
   
  //-------------------//
 
-  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.md`);
+  const filePath = path.join(process.cwd(), "content/artigos", `${slug}.mdx`);
   if (!fs.existsSync(filePath)) notFound();
 
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { content, data } = matter(fileContent);
 
   return (
-    <div className="max-w-3xl mx-auto p-6 text-white">
-      <Link href="/artigos" className="text-subtle hover:underline mb-4 block">
+    <div className="max-w-3xl mx-auto p-6 text-white
+    lg:p-12">
+      <Link href="/artigos" className="text-secondary hover:underline mb-4 block md:hidden lg:hidden">
         ← Artigos
       </Link>
 
@@ -51,7 +52,7 @@ export function generateStaticParams() {
           />
           <div className="text-sm">
             <p className="font-semibold">Rafael Ribeiro</p>
-            <p className="text-subtle text-xs">{data.date}</p>
+            <p className="text-secondary text-xs">{data.date}</p>
           </div>
         </div>
 
@@ -68,8 +69,8 @@ export function generateStaticParams() {
       </div>
 
       {/* ✍️ Conteúdo */}
-      <article className="prose prose-invert max-w-none">
-        <Markdown>{content}</Markdown>
+      <article className="font-light leading-relaxed">
+        <MDXRemote source = {content} />
       </article>
     </div>
   );

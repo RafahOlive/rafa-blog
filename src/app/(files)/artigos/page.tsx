@@ -9,7 +9,7 @@ export default function Artigos() {
   const arquivos = fs.readdirSync(pasta);
 
   const artigos = arquivos.map((arquivo) => {
-    const slug = arquivo.replace(".md", "");
+    const slug = arquivo.replace(".mdx", "");
     const filePath = path.join(pasta, arquivo);
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const { data } = matter(fileContent);

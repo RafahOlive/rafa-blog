@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // Escolhe os pesos que vai usar
+  weight: ['300','400', '500', '600', '700'], // Escolhe os pesos que vai usar
   variable: '--font-poppins',          // Nome da CSS var que será criada
   display: 'swap',
 });
